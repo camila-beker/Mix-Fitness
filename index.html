@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Mix Fitness - Academia Feminina</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/estilo.css" rel="stylesheet">	
+		<link href="https://fonts.googleapis.com/css?family=Audiowide|Rajdhani" rel="stylesheet">
+		<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+	</head>	
+	<body>
+	<main class="container">
+		<header> <!-- Inicio header -->			
+			<h1>Academia Feminina</h1>
+			<p>O MELHOR LUGAR PARA</p> 
+			<p class="destaque">SEU TREINO</p>
+			<p class="frase-header">Treinamento personalizado em todas as modalidades!</p>
+			<button class="btn-header"><a href="#modalidades">Conheça!</a></button>
+		</header> <!-- Fim header -->	
+
+		<button class="btn-menu"><i class="fas fa-bars"></i></button>
+		<div class="logo-mobile"></div>	
+		<nav class="menu"> <!-- Inicio navegação -->
+			<div class="logo"></div>
+			<button class="btn-close"><i class="fas fa-times"></i></button>	
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="#sobre">SOBRE</a></li>
+				<li><a href="#modalidades">MODALIDADES</a></li>
+				<li><a href="#contato">CONTATO</a></li>
+			</ul>	
+		</nav> <!-- Fim navegação -->	
+
+		<section id="sobre"> <!-- Inicio sobre -->
+			<div>
+				<h1>A Mix Fitness</h1>
+				<p>Somos uma academia exclusiva para mulheres. Temos diversas modalidades, todas elas com treinamento especializado!</p>
+				<p>Oferecemos um ambiente familiar, equipamentos modernos, vestiários com ducha, avaliação física, avaliação nutricional e uma excelente equipe de profissionais altamente capacitados para lhe atender!</p>
+				<p>Não perca tempo! Venha nos visitar e faça uma aula sem compromisso para conhecer nossas instalações.</p>
+				<button class="btn-sobre"><a href="#contato">Visite!</a></button>
+			</div>	
+		</section> <!-- Fim sobre -->
+
+		<section id="modalidades"> <!-- Inicio modalidades -->
+			<div class="musculacao">				
+				<img src="img/musculacao.png" alt="Musculação">
+				<h3>MUSCULAÇÃO</h3>
+				<div class="grade-musculacao">	
+					<p class="horarios"><strong>Segunda à Sábado:</strong></p>
+					<p class="manha">Manhã: 08:00 às 09:00, 11:00 às 12:00</p>
+					<p class="tarde">Tarde: 13:00 às 14:00, 15:00 às 16:00</p>
+					<p class="noite">Noite: 18:00 às 19:00, 20:00 às 21:00</p>	
+				</div>
+			</div>
+			<div class="ginastica">
+				<img src="img/ginastica.png" alt="Ginástica">
+				<h3>GINÁSTICA</h3>
+				<div class="grade-ginastica">	
+					<p class="horarios"><strong>Segunda à Sábado:</strong></p>
+					<p class="manha">Manhã: 09:00 às 10:00, 11:00 às 12:00</p>
+					<p class="tarde">Tarde: 14:00 às 15:00, 16:00 às 17:00</p>
+					<p class="noite">Noite: 19:00 às 20:00, 21:00 às 22:00</p>	
+				</div>
+			</div>
+			<div class="jump">
+				<img src="img/jump.png" alt="Jump">
+				<h3>JUMP</h3>
+				<div class="grade-jump">	
+					<p class="horarios"><strong>Segunda à Sábado:</strong></p>
+					<p class="manha">Manhã: 08:00 às 09:00, 11:00 às 12:00</p>
+					<p class="tarde">Tarde: 14:00 às 15:00, 17:00 às 18:00</p>
+					<p class="noite">Noite: 18:00 às 19:00, 21:00 às 22:00</p>	
+				</div>				
+			</div>
+			<div class="zumba">
+				<img src="img/zumba.png" alt="Zumba">
+				<h3>ZUMBA</h3>
+				<div class="grade-zumba">	
+					<p class="horarios"><strong>Segunda à Sábado:</strong></p>
+					<p class="manha">Manhã: 09:00 às 10:00, 11:00 às 12:00</p>
+					<p class="tarde">Tarde: 15:00 às 16:00, 17:00 às 18:00</p>
+					<p class="noite">Noite: 18:00 às 19:00, 21:00 às 22:00</p>	
+				</div>					
+			</div>			
+		</section> <!-- Fim modalidades -->
+		 
+		<section id="contato"> <!-- Inicio contato -->	
+			<h2>Contato</h2>
+			<p>Entre em contato e agende sua visita!</p>				
+			<ul>
+				<li class="phone"><i class="fas fa-phone"></i><a href="tel:xxxxxxxxxx">(XX) XXXX-XXXX</a></li>
+				<li class="mail"><i class="fas fa-envelope"></i><a href="mailto:email@email.com">email@email.com</a></li>
+			</ul>					
+		</section> <!-- Fim contato -->	
+		</main>
+		<footer>
+			<p>Desenvolvido por Camila Becker.</p>
+		</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		$(".btn-menu").click(function(){
+			$(".menu").show();
+		});
+		
+		$(".btn-close").click(function(){
+			$(".menu").hide();
+		});
+
+		$(window).on("scroll", function(){
+			if($(window).scrollTop() > 100){
+				$(".menu").addClass("menu-color");
+			} else {
+				$(".menu").removeClass("menu-color");
+			}
+		});
+	</script>	
+	</body>	
+</html>
